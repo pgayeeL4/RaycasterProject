@@ -1,4 +1,4 @@
-package edu.pgayee.raycasterproject;
+package edu.pgayee.raycasterproject.graphics;
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;

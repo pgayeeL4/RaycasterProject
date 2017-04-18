@@ -1,10 +1,13 @@
-package edu.pgayee.raycasterproject;
+package edu.pgayee.raycasterproject.activity;
 
 import android.opengl.GLSurfaceView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import edu.pgayee.raycasterproject.graphics.MyGLSurfaceView;
+import edu.pgayee.raycasterproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
