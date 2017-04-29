@@ -24,9 +24,6 @@ public class Triangle {
             0.5f, -0.311004243f, 0.0f  // bottom right
     };
 
-    // Set color with red, green, blue and alpha (opacity) values
-    float color[] = { 0.63671875f, 0.0f, 0.0f, 1.0f };
-
     private final String vertexShaderCode =
             // This matrix member variable provides a hook to manipulate
             // the coordinates of the objects that use this vertex shader
@@ -93,7 +90,7 @@ public class Triangle {
 
     }
 
-    public void draw(float[] mvpMatrix) {
+    public void draw(float[] mvpMatrix, float[] color) {
         // Add program to OpenGL ES environment
         GLES20.glUseProgram(mProgram);
 
