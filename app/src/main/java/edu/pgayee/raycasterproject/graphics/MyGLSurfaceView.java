@@ -61,6 +61,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
                         mRenderer.getAngle() +
                                 ((dx + dy) * TOUCH_SCALE_FACTOR));
                 requestRender();
+                break;
         }
 
         mPreviousX = x;

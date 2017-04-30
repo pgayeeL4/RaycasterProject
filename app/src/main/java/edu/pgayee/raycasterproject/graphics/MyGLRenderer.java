@@ -29,7 +29,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public volatile float mAngle;
 
     // Set color with red, green, blue and alpha (opacity) values
-    public volatile float color[] = { 0.63671875f, 0.0f, 0.0f, 1.0f };
+    public volatile float[] mColor = { 0.63671875f, 0.0f, 0.0f, 1.0f };
 
     public float getAngle() {
         return mAngle;
@@ -37,6 +37,14 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     public void setAngle(float angle) {
         mAngle = angle;
+    }
+
+    public float[] getColor() {
+        return mColor;
+    }
+
+    public void setColor(float[] newColor) {
+        mColor = newColor;
     }
 
 
@@ -76,7 +84,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         Matrix.multiplyMM(scratch, 0, mMVPMatrix, 0, mRotationMatrix, 0);
 
         // Draw triangle
-        mTriangle.draw(scratch, color);
+        mTriangle.draw(scratch, mColor);
     }
 
     @Override

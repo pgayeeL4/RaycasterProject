@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import edu.pgayee.raycasterproject.graphics.MyGLSurfaceView;
 import edu.pgayee.raycasterproject.R;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         mGLView = new MyGLSurfaceView(this);
+
         setContentView(mGLView);
     }
 
